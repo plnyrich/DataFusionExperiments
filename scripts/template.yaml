@@ -1,0 +1,45 @@
+general:
+  dataset_folder: "$DATASET_FOLDER"
+  dataset_name: "$DATASET_NAME"
+  classifier_field_prefix: "CLF"
+  ground_truth_field_name: "LABEL"
+  output_file: "$OUTFILE"
+  round_precision: 4
+  use_wan_db: True
+  wandb_tag: $WANDB_TAGS
+  use_all_recalls: $USE_ALL_RECALLS
+  combinator: "$COMBINATOR"
+generator:
+  dataset_size: $DATASET_SIZE
+  classes: [0, 1]
+  num_of_classifiers: $CLF_COUNT
+  %RECALLS
+  class_imbalance: [$CLS_IMBALANCE]
+  class_similarities:
+    0:
+      0: [0, 1]
+      1: [1, 0]
+    1:
+      0: [0, 1]
+      1: [1, 0]
+    2:
+      0: [0, 1]
+      1: [1, 0]
+    3:
+      0: [0, 1]
+      1: [1, 0]
+    4:
+      0: [0, 1]
+      1: [1, 0]
+    5:
+      0: [0, 1]
+      1: [1, 0]
+    6:
+      0: [0, 1]
+      1: [1, 0]
+experiment:
+  name: "$EXPERIMENT_NAME"
+  steps: $STEPS
+  test_size: 0.3
+  random_state: $RANDOM_STATE
+  tag: "$TAG"
