@@ -1,0 +1,15 @@
+__pycache__/
+venv/
+logs/
+conf*
+datasets*
+outputs*
+results*
+graphs*
+logs*
+experiment_data/
+experiment.log
+Explore.ipynb
+.ipynb_checkpoints/
+wandb
+evaluation/
